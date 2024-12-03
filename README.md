@@ -1,4 +1,5 @@
 # Server on Express using PUG and EJS
+____
 ## Installation and launch
 
 ### **1.** Clone the repository
@@ -73,4 +74,9 @@ HW_61_1/
 ├── package-lock.json                # File with project dependencies
 ├── package.json                     # File with project dependencies
 └── README.md                        # This file
+```
+___
+### Student on the Fullstack development course
+### Kateryna Fastovets
+- 📫 How to reach me **KatyaFastovets@gimail.com**
 
