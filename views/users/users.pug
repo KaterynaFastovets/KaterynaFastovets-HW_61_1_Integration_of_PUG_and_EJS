@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title = title
+    link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous")
+  body
+    .container(style="background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);")
+      h1.text-center.mb-4  Список користувачів
+      table.table.table-striped.table-bordered
+        thead
+          tr
+            th # Номер
+            th Ім'я
+        tbody
+          each user, index in users
+            tr
+              td #{index + 1}
+              td
+                a(href=`/users/${user._id}`, style="color: #333;") #{user.name}
+      if users.length === 0
+        p.text-muted.text-center Немає користувачів для відображення.
+
+    

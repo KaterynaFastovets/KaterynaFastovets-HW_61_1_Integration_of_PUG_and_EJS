@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+    integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <title>Список статей</title>
+    <style>
+        body {
+            text-align: left;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #283048, #859398);
+            margin: 0;
+            padding: 5%;
+        }
+    
+        h1 {
+            color: #f2fcfe;
+        }
+    
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Список статей</h1>
+    <ul>
+        <% articles.forEach(article=> { %>
+            <li>
+            <a href="/articles/<%= article.id %>" style="color: #f2fcfe;">Переглянути статтю</a>
+
+            </li>
+            <% }); %>
+    </ul>
+</body>
+
+</html>

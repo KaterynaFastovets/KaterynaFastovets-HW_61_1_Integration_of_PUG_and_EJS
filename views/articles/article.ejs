@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <title>
+        <%= article.title %>
+    </title>
+     <style>
+    body {
+        text-align: center;
+      font-family: Arial, sans-serif;
+       background: linear-gradient(to right, #283048, #859398);
+      margin: 0;
+      padding: 20px;
+    }
+
+    div {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        text-align: right;
+    }
+
+    h1 {
+      color:#f2fcfe;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+         color:#f2fcfe ;
+    }
+  </style>
+</head>
+
+<body>
+    <div><a href="/articles" class="btn btn-secondary">Назад до списку статей</a></div>
+    <h1>
+        <%= article.title %>
+    </h1>
+    <p>
+        <%= article.content %>
+    </p>
+   
+</body>
+
+</html>
