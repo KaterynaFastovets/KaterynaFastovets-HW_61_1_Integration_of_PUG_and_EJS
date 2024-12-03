@@ -60,17 +60,17 @@ http://localhost:3000/articles/:articleId - article details
 ```
 HW_61_1/
 ├── node_modules/  
-├── views/                      # Folder for templates (PUG, EJS)
-│    ├── articles/
+├── views/                           # Folder for templates (PUG, EJS)
+│    ├── articles/                   # Folder for articles
 │        ├── articles.ejs            # Article list template
-│        ├── article.ejs     # Template for a detailed view of the article
-│    ├── users/
+│        ├── article.ejs             # Template for a detailed view of the article
+│    ├── users/                      # Folder for users
 │        ├── users.pug               # User list template
-│        ├── user.pug        # Template for detailed user view
-├── .env                        # File with environment variable settings
-├── .gitignore
-├── index.js                      # Main server file (Express server)
-├── package-lock.json 
-├── package.json                # File with project dependencies
-└── README.md                   # This file
+│        ├── user.pug                # Template for detailed user view
+├── .env                             # File with environment variable settings
+├── .gitignore                       # File ignores files and folders in Git
+├── index.js                         # Main server file (Express server)
+├── package-lock.json                # File with project dependencies
+├── package.json                     # File with project dependencies
+└── README.md                        # This file
 
